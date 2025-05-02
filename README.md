@@ -1,32 +1,58 @@
-## Spaces
+# 🚀 Spaces — A Real-Time Collaboration Platform (Frontend)
 
-Welcome to the Spaces application documentation. This document overviews the project, [prerequisite](#prerequisite), [technologies used](#techused), [getting started](#gettingStarted), [troubleshooting](#troubleshooting), and [conclusion](#conclusion).
+**Spaces** is a real-time collaboration platform for academic use, designed for project-based communication between **students** and **supervisors** at Teesside University.
 
-## Prerequisite
+> This is the frontend application built with React, TypeScript, Tailwind CSS, and Vite.
 
-- Node.js (version 14 or later)
-- yarn
+---
 
-## Technologies used
+## 🌐 Live Demo
 
-- React.js (Vite): A JavaScript web framework.
-- TypeScript: A statically typed superset of JavaScript that compiles to plain JavaScript.
-- Tailwind CSS: A utility‑first CSS framework for rapid UI development.
+🧪 [Try the app live](https://spaces-frontend-omega.vercel.app)
 
-## Getting Started
+### 🔐 Demo Login
 
-> **Quick start:** you don’t need to fork or clone a new copy – simply pull the latest changes and start working.
+Use the following credentials to explore the platform without signing up:
 
-### 1. Pull the repository to your local machine
+- **Email:** `q2115884@live.tees.ac.uk`  
+- **Password:** `Ruthless11.`
 
-If you already have the repo directory:
+---
 
-```bash
-cd spaces-frontend
-git pull origin dev     # or the branch you want to track
-```
+## 📌 University Email Requirement
 
-If you don’t have it yet, clone once and then pull in the future:
+Only users with a **Teesside University email** (`@live.tees.ac.uk`) can register.
+
+During registration, users must select their role:
+
+- 👨‍🏫 **Supervisor**
+- 🎓 **Student**
+
+---
+
+## 🛠️ Built With
+
+Frontend stack:
+
+- ![React](https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+- ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+
+---
+
+## ✨ Key Features
+
+- 🔐 University-only email registration
+- 👥 Role-based onboarding (Supervisor or Student)
+- ⚡  OTP verification
+- 🧘 Responsive User Interface
+
+---
+
+## ⚙️ How To Run The Project Loaclly
+
+### 1. Clone the repository or download and open the ZIP file
 
 ```bash
 git clone https://github.com/prosper20/spaces-frontend.git
@@ -35,24 +61,55 @@ cd spaces-frontend
 
 ### 2. Install dependencies
 
-Make sure you have [yarn](https://classic.yarnpkg.com/en/) installed (see the [prerequisite](#prerequisite) section), then run:
-
 ```bash
 yarn install
 ```
 
-### 3. Run the project locally
+> Make sure [Yarn](https://classic.yarnpkg.com/en/docs/install) and [Node.js](https://nodejs.org/) (v14 or higher) are installed.
+
+### 3. Set up environment variables
+
+Create a `.env` file in the root directory and add the following:
+
+```env
+VITE_API_URL=https://spaces-frontend-omega.vercel.app
+VITE_APP_DOMAIN=https://spaces-frontend-omega.vercel.app
+```
+
+> These values are used to communicate with the backend and define the app’s domain origin.
+
+### 4. Start the development server
 
 ```bash
 yarn dev
 ```
 
-## Troubleshooting
+Visit:  
+📍 `http://localhost:3000`
 
-1. Check the console for any error messages.
-2. Ensure you have met all prerequisites and installation instructions.
+---
 
-## Conclusion
+## 🧩 Project Structure
 
-🎉 Congratulations! The project should now be up and running on your local machine.
+```bash
+spaces-frontend/
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Route-level pages
+│   └── utils/           # Utility functions
+├── public/              # Static assets
+├── .env                 # Environment variables
+└── README.md
 ```
+
+---
+
+## 🧪 Troubleshooting
+
+- Ensure all dependencies are installed (`yarn install`).
+- Make sure you're using a compatible Node.js version.
+- Double-check the `.env` file values and formatting.
+- Confirm that the backend is reachable at `VITE_API_URL`.
+
+---
+
